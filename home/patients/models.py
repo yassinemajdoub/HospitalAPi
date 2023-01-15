@@ -10,7 +10,7 @@ class Patient(models.Model):
     dob = models.DateField()
     gender = models.CharField(max_length=10)
     address = models.CharField(max_length=100)
-    phone = models.CharField(max_length=20 ,unique=True)
+    phone = models.CharField(max_length=20 )
     email = models.EmailField()
     emergency_contact_phone = models.CharField(max_length=20, blank=True)
     created = models.DateTimeField(auto_now_add=True)
